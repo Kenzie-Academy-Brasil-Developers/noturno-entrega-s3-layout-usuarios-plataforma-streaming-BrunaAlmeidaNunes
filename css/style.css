@@ -86,7 +86,7 @@ li {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	width: 168px;
+	width: 186px;
 
 }
 
@@ -107,9 +107,25 @@ figcaption {
 ul {
 	display: flex;
 	justify-content: space-between
+	width: 868px;
 }
 
-@media (max-height: 480px) {
+@media (min-height: 768px) {
+	
+
+	ul {
+	
+		flex-wrap: nowrap;
+
+	}
+
+	h2 {
+		text-align: center;
+		font-size: 30px;
+	}
+	
+}
+@media (max-width: 480px) {
 	header {
 		flex-direction: column;
 
